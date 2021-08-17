@@ -35,7 +35,7 @@ var injected = injected || (function () {
                 "Spanish":"MÁS POPULAR",
                 "French":"LES PLUS LUS",
                 "German":"AM BELIEBTESTEN",
-                "Portuguese":"MAIS POPULAR",
+                "Portugese":"MAIS POPULAR",
                 "Japanese":"最も人気のある",
                 "Chinese":"最受歡迎",
                 "Korean":"가장 인기있는",
@@ -45,7 +45,7 @@ var injected = injected || (function () {
                 "Russian":"САМЫЙ ПОПУЛЯРНЫЙ",
                 "Turkish":"EN POPÜLER",
                 "Thai":"ที่นิยมมากที่สุด",
-                "Danish":"MEST POPULÆRE"
+                "Dannish":"MEST POPULÆRE"
             };
 
             let selector = "trc_desktop_disclosure_link trc_attribution_position_after_branding";
