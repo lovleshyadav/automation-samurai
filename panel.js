@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let languageSelected = languageDropdown.value;
 
         // if (languageSelected !== "English") {
-        $("#console").html("sending");
+        // $("#console").html("sending");
         //chrome.extension.sendMessage(
 
         chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
@@ -72,6 +72,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         // }   
     })
+
+    $("#updateBranding").click(function (e) {
+        e.preventDefault();
+
+        chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
+
+            chrome.tabs.sendMessage(tabs[0].id, {
+                method: 'updateNativeBranding',
+                params: {}
+            })
+        }); 
+    })
+
 
     $("#btnUpdateStyles").click(function (e) {
             e.preventDefault();
